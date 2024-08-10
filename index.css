@@ -1,0 +1,117 @@
+#background {
+  height: 100vh;
+  background-image: url("basketball-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#main {
+  max-width: 80%;
+  margin: 50px;
+  margin-left: 80px;
+  border: 3px solid grey;
+  border-radius: 15px;
+  background-color: black;
+  padding-bottom: 50px;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+@font-face {
+  font-family: 'ErbosD';
+  src: url("fonts/CursedTimerUlil-Aznm.ttf") format("truetype");
+}
+
+.home {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  border-bottom: 3px solid lime;
+  text-shadow: -5px -5px 15px lime;
+}
+
+.count, .time-count, .foul-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 100px;
+  padding: 20px 40px;
+  border: 3px solid grey;
+  border-radius: 10px;
+  font-family: 'ErbosD', sans-serif;
+  color: lime;
+  overflow: hidden; /* Ensures text doesn't overflow the container */
+}
+
+.time-count {
+  height: 50px;
+}
+
+.foul-count {
+  color: rgb(255, 166, 0);
+}
+
+.btn {
+  font-family: 'ErbosD', sans-serif;
+  border: 2px solid rgb(187, 255, 0);
+  border-radius: 5px;
+  font-size: small;
+}
+
+#center {
+  display: inline-flex;
+}
+
+.bttns {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border-color: rgb(187, 255, 0);
+}
+
+.foul-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.foul-txt {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 166, 0);
+  border-bottom: 3px solid rgb(255, 166, 0);
+  text-shadow: -5px -5px 15px rgb(255, 166, 0);
+}
+
+#middle-foul {
+  width: 200px;
+  height: 100px;
+  padding: 20px 40px;
+  border: 3px solid grey;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.foul-game {
+  color: rgb(255, 166, 0);
+  font-family: 'ErbosD', sans-serif;
+}
+
+#msg, #score, #scores{
+ color: White;
+ font-weight: 900;
+ font-size: x-large;
+ padding: 15px;
+ margin: 9px;
+}
+
+#score, #scores{
+  font-size: medium;
+}

@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body id="background">
+        <div id="main">
+            <div class="container">
+                <div class="score">
+                    <h2 class="home">HOME</h2>
+                    <h2 id="home-btns" class="count num">888</h2>
+                    <div class="bttns">
+                        <button class="btn" onclick="addOneHome()">+1</button>
+                        <button class="btn" onclick="addTwoHome()">+2</button>
+                        <button class="btn" onclick="addThreeHome()">+3</button>
+                    </div>
+                    <div id="scores">SCORE:</div>
+                </div>
+                <div id="period-txt">
+                    <div>
+                        <h2 class="home">TIME</h2>
+                        <h2 class="time-count num">11:59</h2>
+                    </div>
+                    <div>
+                        <h2 class="home">PERIOD</h2>
+                        <h2 id="reset" class="time-count num">0</h2>
+                        <button id="center" class="btn bttns" onclick="addOnePeriod()">+1</button>
+                    </div>
+                </div>
+                <div class="score">
+                    <h2 class="home">VISITOR</h2>
+                    <h2 id="visitor-btns" class="count">888</h2>
+                    <div class="bttns">
+                        <button class="btn" onclick="addOneVisit()">+1</button>
+                        <button class="btn" onclick="addTwoVisit()">+2</button>
+                        <button class="btn" onclick="addThreeVisit()">+3</button>
+                    </div>
+                    <div id="score">SCORE:</div>
+                </div>
+            </div>
+            <div class="foul-container">
+                <div class="foul">
+                    <h2 class="foul-txt">H-FOULS</h2>
+                    <h2 id="Hfouls" class="foul-count">00</h2>
+                    <div class="bttns">
+                        <button class="btn" onclick="addOneHfouls()">+1</button>
+                        <button class="btn" onclick="addTwoHfouls()">+2</button>
+                        <button class="btn" onclick="addThreeHfouls()">+3</button>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="foul-txt">FOULS PLAYER</h2>
+                    <div id="middle-foul">
+                        <div class="game">
+                            <h2 id="individualHF" class="foul-game">00</h2>
+                            <button class="btn bttns" onclick="addOneHF()">+1</button>
+                        </div>
+                        <div class="game">
+                            <h2 id="individualVF" class="foul-game">00</h2>   
+                            <button class="btn bttns" onclick="addOneVF()">+1</button>
+                        </div>
+                    </div>
+                    <div id="msg">
+                        <div id="Hfoul-msg">H-Player: Can still play</div>
+                        <div id="Vfoul-msg">V-Player: Can still play</div>
+                    </div>
+                </div>
+                <div class="foul">
+                    <h2 class="foul-txt">V-FOULS</h2>
+                    <h2 id="Vfouls" class="foul-count">00</h2>
+                    <div class="bttns">
+                        <button class="btn" onclick="addOneVfouls()">+1</button>
+                        <button class="btn" onclick="addTwoVfouls()">+2</button>
+                        <button class="btn" onclick="addThreeVfouls()">+3</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="index.js"></script>
+    </body>
+</html>
